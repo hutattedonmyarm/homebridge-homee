@@ -34,12 +34,10 @@ class HomeeAccessory {
 
     updateValue(attribute) {
         if (this.service && attribute.id in this.map) {
-
             let attributeType = attributeTypes.getHAPTypeByAttributeType(attribute.type);
             let newValue = attribute.current_value;
             let oldValue = this.service.getCharacteristic(this.map[attribute.id]).value;
             let targetValue = attribute.target_value;
-
             if(newValue!==oldValue && newValue===targetValue) {
                 this.service.getCharacteristic(this.map[attribute.id]).updateValue(newValue, null, 'ws');
                 this.log.debug(this.name + ': ' + attributeType + ': ' + newValue);
@@ -69,7 +67,7 @@ class HomeeAccessory {
             if (attributeType === 'On' && this.map.indexOf(Characteristic.On) > -1) continue;
 
             if (attributeType) {
-                this.log.debug(attributeType + ': ' + attribute.current_value);
+                this.log.info('[' + this.name + '] Attribute: ' + attributeType + ': ' + attribute.current_value);
                 this.map[attribute.id] = Characteristic[attributeType];
 
                 if (!this.service.getCharacteristic(Characteristic[attributeType])) {

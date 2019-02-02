@@ -3,7 +3,7 @@
 let Accessory, Service, Characteristic, UUIDGen;
 const Homee = require("homee-api");
 const nodeTypes = require("./lib/node_types");
-let HomeeAccessory, WindowCoveringAccessory, HomeegramAccessory;
+let HomeeAccessory, WindowCoveringAccessory, MotionTemperatureAccessory, HomeegramAccessory;
 
 module.exports = function(homebridge) {
     Service = homebridge.hap.Service;
@@ -13,6 +13,7 @@ module.exports = function(homebridge) {
 
     HomeeAccessory = require("./accessories/HomeeAccessory.js")(Service, Characteristic);
     WindowCoveringAccessory = require("./accessories/WindowCoveringAccessory.js")(Service, Characteristic);
+    MotionTemperatureAccessory = require("./accessories/MotionTemperatureAccessory.js")(Service, Characteristic);
     HomeegramAccessory = require("./accessories/HomeegramAccessory.js")(Service, Characteristic);
 
     homebridge.registerPlatform("homebridge-homee", "homee", HomeePlatform, false);
@@ -51,7 +52,10 @@ class HomeePlatform {
                 this.connected = true;
                 this.homee.send('GET:all');
             })
-            .catch(err => this.log.error(err));
+            .catch(err => {
+                this.log.error("Error connecting: ");
+                this.log.error(err);
+            });
     }
 
     /**
@@ -95,6 +99,9 @@ class HomeePlatform {
                 this.foundAccessories.push(new HomeeAccessory(name + '-1', uuid, 'Switch', node, this, 1))
                 let uuid2 = UUIDGen.generate('homee-' + node.id + '2');
                 newAccessory = new HomeeAccessory(name + '-2', uuid2, 'Switch', node, this, 2);
+            } else if (nodeType === 'MotionTemperatureBrightnessSensor') {
+                this.log.debug(name + ': ' + nodeType);
+                newAccessory = new MotionTemperatureAccessory(name, uuid, nodeType, node, this);
             } else if (nodeType) {
                 this.log.debug(name + ': ' + nodeType);
                 newAccessory = new HomeeAccessory(name, uuid, nodeType, node, this);
@@ -174,7 +181,7 @@ class HomeePlatform {
                 let accessory = this.foundAccessories.find(a => a.nodeId === attribute.node_id);
                 if (accessory) {
                     accessory.updateValue(attribute);
-                    this.log.info('Updated accessory %s', accessory.name)
+                    this.log.info('Updated accessory %s.', accessory.name)
                 }
             }
         }
