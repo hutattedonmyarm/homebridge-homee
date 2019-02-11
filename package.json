@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-homee",
+  "name": "homebridge-homee-2",
   "version": "1.0.1",
   "description": "homee platform plugin for homebridge: https://github.com/nfarina/homebridge",
   "license": "MIT",
@@ -9,10 +9,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/stfnhmplr/homebridge-homee.git"
+    "url": "git://github.com/hutattedonmyarm/homebridge-homee.git"
   },
   "bugs": {
-    "url": "http://github.com/stfnhmplr/homebridge-homee/issues"
+    "url": "http://github.com/hutattedonmyarm/homebridge-homee/issues"
   },
   "engines": {
     "node": ">=6.0.0",
