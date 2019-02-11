@@ -3,6 +3,7 @@ const ENUMS = require('../lib/enums.js');
 let Service, Characteristic;
 
 class MotionTemperatureAccessory {
+    // Motion sensor which also includes a temperature sensor, e.g. Fibaro Eye
     constructor(name, uuid, profile, node, platform) {
         this.name = name;
         this.uuid = uuid;
@@ -14,6 +15,7 @@ class MotionTemperatureAccessory {
         this.attributes = {};
         this.services = [];
 
+        // There has to be a more elegant way...
         for (let attribute of node.attributes) {
             switch (attribute.type) {
                 case ENUMS.CAAttributeType.CAAttributeTypeTemperature:
@@ -86,6 +88,8 @@ class MotionTemperatureAccessory {
         if (attribute.current_value) {
             this.log.info('Current value: %s', attribute.current_value);
         }
+        // This is not strictly neccessary an just makes for prettier logs
+        // The Homee API takes care of actually readign the data
         switch (attribute.type) {
             case ENUMS.CAAttributeType.CAAttributeTypeTemperature:
                     this.log.debug('Updated temperature value: %s', attribute.current_value);
@@ -105,31 +109,13 @@ class MotionTemperatureAccessory {
             case ENUMS.CAAttributeType.CAAttributeTypeFirmwareRevision:
                     this.log.debug('Updated firmware revision value: %s', attribute.current_value);
                     break;
-            case ENUMS.CAAttributeType.CAAttributeTypePosition:
-                if (attribute.current_value !== 100-this.service.getCharacteristic(Characteristic.CurrentPosition).value && attribute.current_value === attribute.target_value) {
-                    this.service.getCharacteristic(Characteristic.CurrentPosition)
-                        .updateValue(100-attribute.current_value, null, 'ws');
-                    this.log.debug(this.name + ': CurrentPosition:' + attribute.current_value);
-                }
-
-                if (attribute.target_value !== 100-this.service.getCharacteristic(Characteristic.TargetPosition).value) {
-                    this.service.getCharacteristic(Characteristic.TargetPosition)
-                        .updateValue(100-attribute.target_value, null, 'ws');
-                    this.log.debug(this.name + ': TargetPosition:' + attribute.target_value);
-                }
-
-                break;
-            case ENUMS.CAAttributeType.CAAttributeTypeUpDown:
-                this.service.getCharacteristic(Characteristic.PositionState)
-                    .updateValue(this.positions[attribute.current_value], null, 'ws');
-                this.log.debug(this.name + ': PositionState:' + attribute.current_value);
-                break;
         }
     }
 
     getServices() {
         this.log.debug('Getting Fibaro Motion Sensor services');
 
+        // Basic info about the accessory
         this.informationService = new Service.AccessoryInformation();
         this.informationService.getCharacteristic(Characteristic.FirmwareRevision)
             .updateValue(this.attributes.firmwareRevision.current_value);
@@ -139,6 +125,7 @@ class MotionTemperatureAccessory {
         this.log.debug('Software revision: %s', this.attributes.softwareRevision.current_value);
         this.services.push(this.informationService);
 
+        // Motion data
         this.motionService = new Service.MotionSensor("Motion Sensor");
         this.motionService.getCharacteristic(Characteristic.MotionDetected)
             .updateValue(this.attributes.motionAlarm.current_value);
@@ -151,6 +138,7 @@ class MotionTemperatureAccessory {
         this.log.debug('Motion Alarm Cancelation Delay: %s', this.attributes.motionAlarmCancelationDelay.current_value);
         this.services.push(this.motionService);
 
+        // Temperature sensor
         this.temperatureService = new Service.TemperatureSensor("Temperatur Fenster");
         this.temperatureService.getCharacteristic(Characteristic.CurrentTemperature)
             .updateValue(this.attributes.temperature.current_value);
@@ -160,6 +148,7 @@ class MotionTemperatureAccessory {
         this.log.debug('Brightness: %s', this.attributes.brightness.current_value);
         this.services.push(this.temperatureService);
 
+        // Battery status
         this.batteryService = new Service.BatteryService("Bewegungsmelder Batteriestatus");
         this.batteryService.getCharacteristic(Characteristic.BatteryLevel)
             .updateValue(this.attributes.batteryLevel.current_value);

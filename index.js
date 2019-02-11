@@ -115,9 +115,7 @@ class HomeePlatform {
             } else {
                 this.log.debug(name + ': unknown Accessory Type');
             }
-
             if (newAccessory) this.foundAccessories.push(newAccessory);
-
         }
 
         for (let homeegram of this.homeegrams) {

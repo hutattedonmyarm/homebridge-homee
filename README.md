@@ -2,6 +2,12 @@
 
 homee platform plugin for homebridge: https://github.com/nfarina/homebridge
 
+This fork adds special support for the `Danfoss Living Connect Z Thermostat` and the `Fibaro Motion Sensor`. The former doesn't provide its temperature sensor data to homee and the latter is recognized as motion sensor only, without the temperature data.
+
+HomeKit displays 0.0°C as temperature for the Living Connect Z, so this fork reads data from temperature sensors in the same homee group as the thermostat.
+
+It also registers the Fibaro Motion Sensor as motion *and* temperature sensor.
+
 ## Installation
 Follow the instruction in [NPM](https://www.npmjs.com/package/homebridge) for the homebridge server installation. The plugin is published through [NPM](https://www.npmjs.com/package/homebridge-homee) and should be installed "globally" by typing:
 
@@ -63,5 +69,5 @@ Homekit cannot manage more than 100 devices per bridge. If you have together mor
 - Qubino Flush Dimmer
 - Sensative Stripes
 
-## Donate
+## Donate the original author of the project!
 <a href="https://www.buymeacoffee.com/himpler" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
