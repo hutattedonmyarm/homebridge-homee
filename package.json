@@ -1,5 +1,5 @@
 {
-  "name": "homebridge-homee-2",
+  "name": "@aymm/homebridge-homee-2",
   "version": "1.0.1",
   "description": "homee platform plugin for homebridge: https://github.com/nfarina/homebridge",
   "license": "MIT",
@@ -22,5 +22,15 @@
     "homebridge": "^0.4.46",
     "homee-api": "^0.11",
     "sha.js": "^2.4.11"
-  }
+  },
+  "homepage": "https://github.com/hutattedonmyarm/homebridge-homee#readme",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
 }
