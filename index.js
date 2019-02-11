@@ -3,7 +3,8 @@
 let Accessory, Service, Characteristic, UUIDGen;
 const Homee = require("homee-api");
 const nodeTypes = require("./lib/node_types");
-let HomeeAccessory, WindowCoveringAccessory, MotionTemperatureAccessory, HomeegramAccessory;
+let HomeeAccessory, WindowCoveringAccessory, MotionTemperatureAccessory, HomeegramAccessory, ThermostatWithoutTemperature;
+const ENUMS = require('./lib/enums.js');
 
 module.exports = function(homebridge) {
     Service = homebridge.hap.Service;
@@ -14,6 +15,7 @@ module.exports = function(homebridge) {
     HomeeAccessory = require("./accessories/HomeeAccessory.js")(Service, Characteristic);
     WindowCoveringAccessory = require("./accessories/WindowCoveringAccessory.js")(Service, Characteristic);
     MotionTemperatureAccessory = require("./accessories/MotionTemperatureAccessory.js")(Service, Characteristic);
+    ThermostatWithoutTemperature = require("./accessories/ThermostatWithoutTemperature.js")(Service, Characteristic);
     HomeegramAccessory = require("./accessories/HomeegramAccessory.js")(Service, Characteristic);
 
     homebridge.registerPlatform("homebridge-homee", "homee", HomeePlatform, false);
@@ -104,7 +106,12 @@ class HomeePlatform {
                 newAccessory = new MotionTemperatureAccessory(name, uuid, nodeType, node, this);
             } else if (nodeType) {
                 this.log.debug(name + ': ' + nodeType);
-                newAccessory = new HomeeAccessory(name, uuid, nodeType, node, this);
+                const hasTempSensor = node.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature).length > 0;
+                if (nodeType === 'Thermostat' && !hasTempSensor) {
+                    newAccessory = new ThermostatWithoutTemperature(name, uuid, nodeType, node, this);
+                } else {
+                    newAccessory = new HomeeAccessory(name, uuid, nodeType, node, this);
+                }
             } else {
                 this.log.debug(name + ': unknown Accessory Type');
             }

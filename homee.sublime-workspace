@@ -1,0 +1,1265 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Temperature",
+				"TemperatureDisplayUnits\t(HomeKitTypes.js)"
+			],
+			[
+				"targ",
+				"targetTemperature"
+			],
+			[
+				"Targ",
+				"TargetTemperature\t(attribute_types.js)"
+			],
+			[
+				"thermo",
+				"thermostatService"
+			],
+			[
+				"nodes",
+				"nodeTypes"
+			],
+			[
+				"motion",
+				"motionAlarmCancelationDelay"
+			],
+			[
+				"Batt",
+				"BatteryService\t(HomeKitTypes.js)"
+			],
+			[
+				"t",
+				"type"
+			],
+			[
+				"mot",
+				"motionAlarm"
+			],
+			[
+				"service",
+				"services"
+			],
+			[
+				"Strike",
+				"StrikesDB\t  namespace Longman\\TelegramBot"
+			],
+			[
+				"message",
+				"messageID"
+			],
+			[
+				"strike",
+				"strike_message_id"
+			],
+			[
+				"getMessage",
+				"getMessageId"
+			],
+			[
+				"userI",
+				"userIdTo"
+			],
+			[
+				"array_key",
+				"array_key_exists($0)\t  array_key_exists(mixed $key, array $array): bool"
+			],
+			[
+				"postI",
+				"postIdInput"
+			],
+			[
+				"def",
+				"defs\tMethod"
+			],
+			[
+				"months",
+				"monthly_distances\t  __main__.print_stats"
+			],
+			[
+				"start",
+				"start_date"
+			],
+			[
+				"dur",
+				"duration"
+			],
+			[
+				"dist",
+				"distance"
+			],
+			[
+				"cur",
+				"current_item"
+			],
+			[
+				"for",
+				"formData"
+			],
+			[
+				"getE",
+				"getSelectedTimestamp"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"da",
+				"dateVal"
+			],
+			[
+				"par",
+				"parseDate"
+			],
+			[
+				"day",
+				"day"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"date",
+				"dateComponents"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"tim",
+				"timestamp"
+			],
+			[
+				"tm",
+				"timestamp"
+			],
+			[
+				"Da",
+				"dateVal"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"res",
+				"responseText"
+			],
+			[
+				"main",
+				"main-bg-color"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"mar",
+				"margin-top\tproperty"
+			],
+			[
+				"marg",
+				"margin-bottom\tproperty"
+			],
+			[
+				"inl",
+				"inline-block\tdisplay"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"trans",
+				"transition\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"a",
+				"auto\tmargin"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"filt",
+				"filtered"
+			],
+			[
+				"pos",
+				"posts"
+			],
+			[
+				"po",
+				"posts"
+			],
+			[
+				"box",
+				"box-sizing\tproperty"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			],
+			[
+				"fon",
+				"font-family\tproperty"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"clie",
+				"client_secret"
+			],
+			[
+				"strt",
+				"strtoupper"
+			],
+			[
+				"client",
+				"client_id"
+			],
+			[
+				"conte",
+				"content_type"
+			],
+			[
+				"pri",
+				"private"
+			],
+			[
+				"auth",
+				"auth_code"
+			],
+			[
+				"clien",
+				"client_secret"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"sc",
+				"scope"
+			],
+			[
+				"cn",
+				"configs"
+			],
+			[
+				"cli",
+				"client_id"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"conf",
+				"configs"
+			],
+			[
+				"pr",
+				"private"
+			],
+			[
+				"inc",
+				"include_once"
+			],
+			[
+				"incl",
+				"incl1\tinclude_once …"
+			],
+			[
+				"stat",
+				"status_obj"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"curr",
+				"current_dl"
+			],
+			[
+				"las",
+				"last_status\t  __main__.__init__"
+			],
+			[
+				"in",
+				"info"
+			],
+			[
+				"mp",
+				"mp3file"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"Tele",
+				"Telegram"
+			],
+			[
+				"bo",
+				"bot_id"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "accessories/MotionTemperatureAccessory.js",
+			"settings":
+			{
+				"buffer_size": 9335,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/attribute_types.js",
+			"settings":
+			{
+				"buffer_size": 2449,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/enums.js",
+			"settings":
+			{
+				"buffer_size": 22348,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 7183,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "accessories/ThermostatWithoutTemperature.js",
+			"settings":
+			{
+				"buffer_size": 10744,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "node_modules/hap-nodejs/lib/gen/HomeKitTypes.js",
+			"settings":
+			{
+				"buffer_size": 110195,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "accessories/HomeeAccessory.js",
+			"settings":
+			{
+				"buffer_size": 3705,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "accessories/HomeegramAccessory.js",
+			"settings":
+			{
+				"buffer_size": 1532,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"key ",
+				"Preferences: Key Bindings"
+			],
+			[
+				"lsp",
+				"LSP: Setup Language Server"
+			],
+			[
+				"ena",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"inde",
+				"Indent JSON"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"reide",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"markdow",
+				"Set Syntax: Markdown"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"csv",
+				"Set Syntax: CSV (Rainbow)"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"lsp set",
+				"LSP: Setup Language Server"
+			],
+			[
+				"lso",
+				"LSP: Show Diagnostics"
+			],
+			[
+				"disab",
+				"LSP: Disable Language Server Globally"
+			],
+			[
+				"dia",
+				"LSP: Show Diagnostics"
+			],
+			[
+				"lsp se",
+				"Preferences: LSP Settings"
+			],
+			[
+				"disable",
+				"LSP: Disable Language Server Globally"
+			],
+			[
+				"setup",
+				"LSP: Setup Language Server"
+			],
+			[
+				"git",
+				"LSP: Show Diagnostics"
+			],
+			[
+				"sublimerge",
+				"Sublimerge: Show Uncommited Changes..."
+			],
+			[
+				"commit",
+				"Set Syntax: Git Commit"
+			],
+			[
+				"sublimer",
+				"Sublimerge: Show Uncommited Changes..."
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"rainbow",
+				"Set Syntax: CSV (Rainbow)"
+			],
+			[
+				"settin",
+				"Preferences: Settings"
+			],
+			[
+				"syntax ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"enab",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"disa",
+				"LSP: Disable Language Server Globally"
+			],
+			[
+				"languag",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"bash",
+				"Set Syntax: Bourne Again Shell (bash)"
+			],
+			[
+				"enable",
+				"LSP: Enable Language Server Globally"
+			],
+			[
+				"package re",
+				"Package Control: Remove Package"
+			],
+			[
+				"language",
+				"LSP: Setup Language Server"
+			],
+			[
+				"merge",
+				"Sublimerge: Compare to Clipboard"
+			],
+			[
+				"diff",
+				"Set Syntax: Diff"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"CSSLint: Run CSSLint"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"pla",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"uncomm",
+				"Sublimerge: Show Uncommited Changes..."
+			],
+			[
+				"commi",
+				"Sublimerge: Show Uncommited Changes..."
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"sublmer",
+				"Sublimerge: Show Uncommited Changes..."
+			],
+			[
+				"git sta",
+				"Git: Status"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/max/Bob/Documents/homebridge-homee/lib/node_types.js",
+		"/Users/max/Bob/Documents/homebridge-homee/node_modules/homee-api/homee.js",
+		"/Users/max/Bob/Documents/homebridge-homee/node_modules/homebridge/lib/logger.js",
+		"/Users/max/Bob/Documents/homebridge-homee/node_modules/hap-nodejs/lib/gen/HomeKitTypes.js",
+		"/Users/max/Bob/Documents/homebridge-homee/node_modules/hap-nodejs/lib/Characteristic.js",
+		"/Users/max/Bob/Documents/homebridge-homee/node_modules/hap-nodejs/lib/Service.js",
+		"/Users/max/Bob/Documents/homebridge-homee/accessories/WindowCoveringAccessory.js",
+		"/Users/max/Bob/Documents/homebridge-homee/node_modules/homee-api/package.json",
+		"/Users/max/Bob/Documents/homebridge-homee/package.json",
+		"/Users/max/Bob/Documents/homebridge-homee/node_modules/homebridge/lib/api.js",
+		"/Users/max/Documents/Programmieren/kinderbot2/Commands/LobCommand.php",
+		"/Users/max/Documents/Programmieren/kinderbot2/Commands/StrikeCommand.php",
+		"/Users/max/Documents/Programmieren/kinderbot2/vendor/longman/telegram-bot/src/StrikesDB.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/index.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/kindergesangsbot_debug.log",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/kindergesangsbot_update.log",
+		"/Users/max/Bob/setup.sh",
+		"/Users/max/Bob/.homebridge/config.json",
+		"/Users/max/Downloads/_3DBenchy_-_The_jolly_3D_printing_torture-test_by_CreativeTools/README.txt",
+		"/Users/max/Bob/Documents/shairportmeta/shairport-sync-metadata-python/bin/output.py",
+		"/Users/max/Bob/Documents/shairportmeta.py",
+		"/Users/max/Dropbox/CR-10S Pro.ini",
+		"/Users/max/Library/Application Support/cura/4.0/definition_changes/Creality+CR-10S_settings.inst.cfg",
+		"/Users/max/Library/Application Support/cura/4.0/definition_changes/Creality+CR-10S+Pro_settings.inst.cfg",
+		"/Users/max/Library/Application Support/cura/4.0/machine_instances/Creality+CR-10S.global.cfg",
+		"/Users/max/Library/Application Support/cura/4.0/definition_changes/creality_cr10_extruder_0+%232_settings.inst.cfg",
+		"/Users/max/Bob/Documents/nzbhdydra2/data/nzbhydra.yml",
+		"/Users/max/Bob/Documents/nzbhdydra2/nzbhydra2wrapper.py",
+		"/Users/max/Bob/nzbhydra2wrapper.py",
+		"/Users/max/Bob/Documents/shairportmeta/shairport-sync-metadata-python/bin/shairport-meta.php",
+		"/Users/max/Bob/Documents/shairportmeta/shairport-sync-metadata-python/bin/output_text.py",
+		"/Users/max/Documents/Programmieren/roastmonday/APnutI/Logger.php",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/pictures.php",
+		"/Users/max/Documents/Programmieren/roastmonday/APnutI/API.php",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/get_posttext.php",
+		"/Users/max/Documents/Health Export/readcsv.py",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/get_userdetails.php",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/scripts/pictureViewer.js",
+		"/Users/max/Documents/Programmieren/matplotlib/lib/matplotlib/rcsetup.py",
+		"/Users/max/Documents/Programmieren/matplotlib/lib/matplotlib/backends/backend_macosx.py",
+		"/Users/max/Documents/Programmieren/matplotlib/tests.py",
+		"/Users/max/Desktop/a.py",
+		"/Users/max/Documents/Programmieren/matplotlib/src/_macosx.m",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/Roastmonday.php",
+		"/Users/max/Documents/Programmieren/roastmonday/Roastmonday.php",
+		"/Users/max/.bash_aliases",
+		"/Users/max/Documents/Programmieren/matplotlib/pytest.ini",
+		"/Users/max/.pyenv/versions/3.7.1/lib/python3.7/site-packages/matplotlib/backend_bases.py",
+		"/Users/max/Documents/Programmieren/matplotlib/lib/matplotlib/__init__.py",
+		"/Users/max/Documents/Programmieren/matplotlib/matplotlibrc.template",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/cron.php",
+		"/Users/max/Downloads/SearchBot_results_for_ ryan north.txt",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/fetch_mondays.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/2019-01-15.log",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/fetch_mondays.php",
+		"/Users/max/Documents/Programmieren/matplotlib/setup.cfg",
+		"/Users/max/Documents/Programmieren/roastmonday/APnutI/2019-01-13.log",
+		"/Users/max/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-mousemap",
+		"/Users/max/Library/Application Support/Sublime Text 3/Packages/User/VcsGutter.sublime-settings",
+		"/Users/max/Library/Application Support/Sublime Text 3/Packages/VCS Gutter/VcsGutter.sublime-settings",
+		"/Users/max/Documents/Programmieren/lsp-tsserver/src/server.ts",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/StatsCommand.php",
+		"/Users/max/Documents/Health Export/export.py",
+		"/Users/max/.pyenv/versions/3.7.1/lib/python3.7/site-packages/matplotlib/mpl-data/matplotlibrc",
+		"/Users/max/Desktop/shairportmeta.py",
+		"/Users/max/Desktop/1.txt",
+		"/Users/max/Desktop/setup.sh",
+		"/Users/max/Documents/Health Export/FlightsClimbed.csv",
+		"/Users/max/Documents/Health Export/Export.xml",
+		"/Users/max/Documents/Health Export/Walking.csv",
+		"/Users/max/Documents/Health Export/Running.csv",
+		"/Users/max/.bash_profile",
+		"/Users/max/Documents/Programmieren/roastmonday/APnutI/Post.php",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/style/style.css",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/upload_avatar.php",
+		"/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources/__init__.py",
+		"/Users/max/.config/mopidy/mopidy.conf",
+		"/Users/max/.bashrc",
+		"/Users/max/Desktop/python.txt",
+		"/Users/max/.profile",
+		"/Users/max/.bash_rc",
+		"/Users/max/Documents/Programmieren/cnqelayout/test.html",
+		"/Users/max/Documents/Programmieren/test.html",
+		"/Users/max/Documents/Programmieren/wo-ist-markt.github.io/cities/konstanz.json",
+		"/Users/max/Documents/Programmieren/wo-ist-markt.github.io/cities/cities.json",
+		"/Users/max/Documents/Programmieren/wo-ist-markt.github.io/cities/karlsruhe.json",
+		"/Users/max/Documents/Programmieren/wo-ist-markt.github.io/validation/markets-validator.js",
+		"/Users/max/Documents/Programmieren/wo-ist-markt.github.io/README.md",
+		"/Users/max/Downloads/shifts.ics",
+		"/Users/max/Documents/Programmieren/bademeister.py",
+		"/Users/max/Documents/Programmieren/seetroll.py",
+		"/Users/max/Documents/Programmieren/kinderstiftung.py",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/scripts/toast.js",
+		"/Volumes/Rylai/Ready Player One (2018)/Ready Player One (2018) Bluray-2160p.nfo",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/icons/close.svg",
+		"/Users/max/Downloads/noun_Close_2101461.svg",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/style/toast2.js",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/style/toast.js",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/index.php",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/includes.php",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/scripts/roastmonday_common.js",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/bademeister.xml",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/scripts/themes.json",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/pictures.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/includes.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/get_posttext.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/auth_callback.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/get_userdetails.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/global_functions.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/includes 2.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/Post.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/config.php",
+		"/Users/max/Documents/Programmieren/roastmonday/config.template.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/Poll.php",
+		"/Users/max/Documents/Programmieren/roastmonday/APnutI/Poll.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/style.css",
+		"/Users/max/Dropbox/Apps/Reddit Enhancement Suite/res-storage.json",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/roastmonday_common.js",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/auth_callback.php",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/global_functions.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/Logger.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/User.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/API.php",
+		"/private/var/folders/1d/59h9nlr90ts4y51cjwx2qz4h0000gn/T/fz3temp-2/token.json",
+		"/Users/max/Documents/Programmieren/roastmonday/APnutI/User.php",
+		"/Users/max/Documents/Programmieren/Stachio_Santa/public_html/style/style.css",
+		"/Users/max/Documents/Programmieren/roastmonday/public_html/get_themepostdetails.php",
+		"/Users/max/Documents/Programmieren/roastmonday/APnutI/.gitignore"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			"/Users/max/Bob/Documents/homebridge-homee",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"EventEmitter",
+			"thermos",
+			"relations",
+			"group",
+			"groups",
+			"room",
+			"thermos",
+			"offset",
+			"indication",
+			"motion",
+			"software",
+			"firmware",
+			"batteryle",
+			"tempera",
+			"bright",
+			"Brightness",
+			"Characteristic.Brightness",
+			"value",
+			"homee",
+			"setTargetPosition",
+			"services",
+			"MotionSensor",
+			"accessories",
+			"sha",
+			"getSer",
+			"optionalCha",
+			"26",
+			"sha",
+			"debug",
+			"not conne",
+			"found",
+			"attr",
+			"getServices",
+			"AccessoryInformation",
+			"attribute",
+			"attributes",
+			"attribute"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "accessories/MotionTemperatureAccessory.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6590,
+								6590
+							]
+						],
+						"settings":
+						{
+							"lsp_language":
+							{
+								"polymer-ide": "javascript"
+							},
+							"rainbow_inited": true,
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 5.0,
+						"translation.y": 1394.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/attribute_types.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								547
+							]
+						],
+						"settings":
+						{
+							"lsp_language":
+							{
+								"polymer-ide": "javascript"
+							},
+							"rainbow_inited": true,
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/enums.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 22348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5020,
+								5050
+							]
+						],
+						"settings":
+						{
+							"lsp_language":
+							{
+								"polymer-ide": "javascript"
+							},
+							"rainbow_inited": true,
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 625.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3457,
+								3457
+							]
+						],
+						"settings":
+						{
+							"lsp_language":
+							{
+								"polymer-ide": "javascript"
+							},
+							"rainbow_inited": true,
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2110.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "accessories/ThermostatWithoutTemperature.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8694,
+								8694
+							]
+						],
+						"settings":
+						{
+							"lsp_language":
+							{
+								"polymer-ide": "javascript"
+							},
+							"rainbow_inited": true,
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2160.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "node_modules/hap-nodejs/lib/gen/HomeKitTypes.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 110195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107006,
+								106968
+							]
+						],
+						"settings":
+						{
+							"lsp_language":
+							{
+								"eslint": "javascript",
+								"polymer-ide": "javascript"
+							},
+							"rainbow_inited": true,
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 58275.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "accessories/HomeeAccessory.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3705,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1761,
+								1761
+							]
+						],
+						"settings":
+						{
+							"lsp_language":
+							{
+								"polymer-ide": "javascript"
+							},
+							"rainbow_inited": true,
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 791.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "accessories/HomeegramAccessory.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1532,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"lsp_language":
+							{
+								"polymer-ide": "javascript"
+							},
+							"rainbow_inited": true,
+							"show_definitions": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 94.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.csslint_result_view":
+	{
+		"height": 120.0
+	},
+	"output.diagnostics":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.references":
+	{
+		"height": 120.0
+	},
+	"pinned_build_system": "",
+	"project": "homee.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 268.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
