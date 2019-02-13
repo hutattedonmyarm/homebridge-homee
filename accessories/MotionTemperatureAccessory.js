@@ -93,6 +93,9 @@ class MotionTemperatureAccessory {
         switch (attribute.type) {
             case ENUMS.CAAttributeType.CAAttributeTypeTemperature:
                     this.log.debug('Updated temperature value: %s', attribute.current_value);
+                    this.temperatureService.getCharacteristic(Characteristic.CurrentTemperature)
+                        .updateValue(attribute.current_value, null, 'ws');
+                    //this.temperatureService.setCharacteristic(Characteristic.CurrentTemperature, temperature);
                     break;
             case ENUMS.CAAttributeType.CAAttributeTypeBatteryLevel:
                     this.log.debug('Updated battery value: %s', attribute.current_value);
