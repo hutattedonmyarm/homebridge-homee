@@ -17,40 +17,9 @@ class ThermostatWithoutTemperature {
         this.attributes = {};
         this.services = [];
         this.tempNodes = [];
-        this.tempNode = null;
-        // Find all groups this thermostat is part of
-        const groups = this.homee._relationships.filter(r => r.node_id == this.nodeId).map(g => g.group_id);
-        // Find accessories which have a temperature sensor in the groups
-        for (const g of groups) {
-            const nodesInGroup = this.homee.getNodesByGroup(g);
-            this.tempNodes = this.tempNodes.concat(nodesInGroup.filter(n => n.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature).length > 0));
-            /*
-            const tmp = nodesInGroup.filter(n => n.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature).length > 0);
-            if (tmp.length > 0) {
-                this.tempNode = tmp[0];
-            }
-            */
-        }
-
-        // Calculates the average of all temperature sensors
-        const average = arr => arr.reduce( ( p, c ) => {
-            this.log.debug("Temp sensor in group: %s", c.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0].current_value);
-            return p + c.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0].current_value;
-        }, 0 ) / arr.length;
-
-        //if (!this.tempNode) {
-        if (!this.tempNodes.length) {
-            this.log.warn('%s does not have a temperature sensor included, and isn\'t in the same group as one.', this.name);
-        } else {            
-            const result = average(this.tempNodes);
-            this.log.debug("Average temp: %s", result);
-            // Clone the basic info of the first found temperature sensor
-            this.attributes.temperature = this.tempNodes[0].attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0];
-            //this.attributes.temperature = this.tempNode.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0];
-            // Update its values with average
-            this.attributes.temperature.current_value = result;
-            this.log.debug('Current temperature: %s', this.attributes.temperature.current_value);
-        }
+        this.updateTemperatureInterval = 120000;
+        
+        this.getTemperature();
 
         // Add the other attributes
         for (let attribute of node.attributes) {
@@ -80,41 +49,47 @@ class ThermostatWithoutTemperature {
         }
 
         setInterval(() => {
-            // TODO: Prettify, DRY, and reaad duration from update interval of sensors. (Use the lowest value)
+        this.getTemperature();
+        }, this.updateTemperatureInterval);
+    }
 
+    getTemperature() {
+        this.tempNodes = []
+        const groups = this.homee._relationships.filter(r => r.node_id == this.nodeId).map(g => g.group_id);
+        // Find accessories which have a temperature sensor in the groups
+        for (const g of groups) {
+            const nodesInGroup = this.homee.getNodesByGroup(g);
+            this.tempNodes = this.tempNodes.concat(nodesInGroup.filter(n => n.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature).length > 0));
+        }
+        // Find lowest wakeup interval
+        const wakeUpIntervalNodes = this.tempNodes.filter(n => n.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeWakeUpInterval).length > 0);
+        if (wakeUpIntervalNodes.length) {
+            // Find minimum, multiply by 60000 (minutes => milisec)
+            this.updateTemperatureInterval = Math.max.apply(Math, wakeUpIntervalNodes.map(function(o) { return o.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeWakeUpInterval)[0].current_value; })) * 60000;
+        }
 
-            /*
-            this.getValue(null, (err, { humidity, temperature, light, motion} ) => {
-            
-            });
-            */
-           /*
-           this.thermostatService.getCharacteristic(Characteristic.CurrentTemperature)
-            .updateValue(this.attributes.temperature.current_value);
-            */
-           this.tempNodes = []
-           const groups = this.homee._relationships.filter(r => r.node_id == this.nodeId).map(g => g.group_id);
-            // Find accessories which have a temperature sensor in the groups
-            for (const g of groups) {
-                const nodesInGroup = this.homee.getNodesByGroup(g);
-                this.tempNodes = this.tempNodes.concat(nodesInGroup.filter(n => n.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature).length > 0));
-                /*
-                const tmp = nodesInGroup.filter(n => n.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature).length > 0);
-                if (tmp.length > 0) {
-                    this.tempNode = tmp[0];
-                }
-                */
-            }
-            const average = arr => arr.reduce( ( p, c ) => {
-                this.log.debug("Temp sensor in group: %s", c.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0].current_value);
-                return p + c.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0].current_value;
-            }, 0 ) / arr.length;
+        const average = arr => arr.reduce( ( p, c ) => {
+            this.log.debug("Temp sensor in group: %s", c.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0].current_value);
+            return p + c.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0].current_value;
+        }, 0 ) / arr.length;
+
+        if (!this.tempNodes.length) {
+            this.log.warn('%s does not have a temperature sensor included, and isn\'t in the same group as one.', this.name);
+        } else {            
             const result = average(this.tempNodes);
-            //this.log.debug("Average temp updated to: %s", result);
-            this.log.debug("Updating thermostat current temp to %s", result);
-            this.thermostatService.getCharacteristic(Characteristic.CurrentTemperature)
-            .updateValue(result);
-        }, 120000);
+            this.log.debug("Updating thermostat current temp to: %s", result);
+            // Clone the basic info of the first found temperature sensor
+            this.attributes.temperature = this.tempNodes[0].attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0];
+            // Update its values with average
+            this.attributes.temperature.current_value = result;
+            this.log.debug('Current temperature: %s', this.attributes.temperature.current_value);
+            
+            // Update with newly calculated value
+            if (this.thermostatService) {
+                this.log.debug("Updating thermostat current temp to %s", result);
+                this.thermostatService.getCharacteristic(Characteristic.CurrentTemperature).updateValue(result);
+            }
+        }
     }
 
     /**
@@ -124,7 +99,7 @@ class ThermostatWithoutTemperature {
     updateValue(attribute) {
         this.log.info('Updated thermostat attribute of type %s with id %s', attribute.type, attribute.id)
         if (attribute.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature) {
-            
+            /*
             const average = arr => arr.reduce( ( p, c ) => {
                 this.log.debug("Temp sensor in group: %s", c.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0].current_value);
                 return p + c.attributes.filter(a => a.type == ENUMS.CAAttributeType.CAAttributeTypeTemperature)[0].current_value;
@@ -141,9 +116,8 @@ class ThermostatWithoutTemperature {
                 this.attributes.temperature.current_value = result;
                 this.thermostatService.getCharacteristic(Characteristic.CurrentTemperature)
                     .updateValue(targetTemperature.current_value);
-            }
-            
-           //this.thermostatService.getCharacteristic(Characteristic.CurrentTemperature).updateValue(attribute.current_value, null, 'ws');
+            }*/
+            this.getTemperature();
         } else if (attribute.type == ENUMS.CAAttributeType.CAAttributeTypeTargetTemperature) {
             this.log.debug("Updating target temp value %s, %o", attribute.target_value);
             this.thermostatService.getCharacteristic(Characteristic.TargetTemperature)
