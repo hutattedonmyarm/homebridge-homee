@@ -1,5 +1,5 @@
 {
-  "name": "@aymm/homebridge-homee-2",
+  "name": "homebridge-homee-2",
   "version": "1.0.1",
   "description": "homee platform plugin for homebridge: https://github.com/nfarina/homebridge",
   "license": "MIT",
